@@ -25,27 +25,29 @@ import javax.swing.JPanel;
 public class DragDropQuestion extends JPanel implements MouseListener, MouseMotionListener 
 {
 	//  Properties
-	private String title;
-	private ArrayList<Box>  as = new ArrayList<Box>();
-	private String Url;
-	private Image		    image;
-	private JButton         but, but2;
-	private boolean 	    evaluate;
-	int					    count = 0;
-	int 					v = 0;
+	private ArrayList<Box>  	as = new ArrayList<Box>();
+	private String 			title;
+	private String 			Url;
+	private Image			image;
+	private JButton			but, but2;
+	private boolean 	   	evaluate;
+	private int			count = 0;
+	private int 			v = 0;
+
 	// The collection that holds the questions and answers for the current panel				
+	
 	private boolean   		teacherModeEnabled = true;
 	private JButton  		removeQuestion = new JButton( "Remove question");
 	private int  			num, again;
 	private String 			numStr, ansTitle;
-	private boolean ok;
+	private boolean 		ok;
 	private JButton  		preview;
-	private int 				correct=0;
-	private int 				wrong=0;
-	private int 				qNo=0;
+	private int 			correct=0;
+	private int 			wrong=0;
+	private int 			qNo=0;
 	private JButton			submit;
-	private int 				next;
-	private BufferedImage	img;
+	private int 			next;
+	private BufferedImage		img;
 	
 	//	Constructor
 	public DragDropQuestion( Controller controller,String title, String Url,ArrayList<Box>  as, boolean teacherModeOn) 
