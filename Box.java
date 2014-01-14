@@ -1,27 +1,19 @@
-import java.awt.*;
+﻿import java.awt.*;
 import java.io.Serializable;
 
-/*
- *
- * Box  - The original question class that also has the answer locations as properties and has a draw(g) method itself
- *
- * @author: Group 1E    ( 21100664 Caner Bozkurt - 21201718 Atila Orhon - Yasemin Beg�m Pirin�) 22.04.2013
- *
- */
+
  
 public class Box implements Serializable
 {
-	/**
-	 * 
-	 */
-	public int x;
-	public int y;
-	public int w;
-	public int h;
-	public Point answer;
-	public boolean selected;
-	public String title;
-	public boolean answerFull;
+	
+	private int x;
+	private int y;
+	private int w;
+	private int h;
+	private Point answer;
+	private boolean selected;
+	private String title;
+	private boolean answerFull;
 
 	
 	

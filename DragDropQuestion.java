@@ -1,12 +1,4 @@
-/*
- *
- * DragDropQuestion  - The specialized panel that employs Drag and Drop type questions arranged on an image
- *
- * This type of question is not implemented in the project yet, This is independent and is to be conformed to the project soon
- *
- * @author: Group 1E    ( 21100664 Caner Bozkurt - 21201718 Atila Orhon - Yasemin Beg�m Pirin� ) 22.04.2013
- *
- */
+﻿
 
 
 import java.awt.Color;
@@ -33,27 +25,27 @@ import javax.swing.JPanel;
 public class DragDropQuestion extends JPanel implements MouseListener, MouseMotionListener 
 {
 	//  Properties
-	public String title;
-	public  ArrayList<Box>  as = new ArrayList<Box>();
-	public String Url;
+	private String title;
+	private ArrayList<Box>  as = new ArrayList<Box>();
+	private String Url;
 	private Image		    image;
-	public  JButton         but, but2;
-	public  boolean 	    evaluate;
+	private JButton         but, but2;
+	private boolean 	    evaluate;
 	int					    count = 0;
 	int 					v = 0;
 	// The collection that holds the questions and answers for the current panel				
-	public boolean   		teacherModeEnabled = true;
-	public JButton  		removeQuestion = new JButton( "Remove question");
-	public int  			num, again;
-	public String 			numStr, ansTitle;
-	public boolean ok;
-	public JButton  		preview;
-	public int 				correct=0;
-	public int 				wrong=0;
-	public int 				qNo=0;
-	public JButton			submit;
-	public int 				next;
-	public BufferedImage	img;
+	private boolean   		teacherModeEnabled = true;
+	private JButton  		removeQuestion = new JButton( "Remove question");
+	private int  			num, again;
+	private String 			numStr, ansTitle;
+	private boolean ok;
+	private JButton  		preview;
+	private int 				correct=0;
+	private int 				wrong=0;
+	private int 				qNo=0;
+	private JButton			submit;
+	private int 				next;
+	private BufferedImage	img;
 	
 	//	Constructor
 	public DragDropQuestion( Controller controller,String title, String Url,ArrayList<Box>  as, boolean teacherModeOn) 
